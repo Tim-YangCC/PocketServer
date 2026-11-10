@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  FileProvider 可对外（系统播放器/图片查看器）授权的路径白名单。
+
+  为什么电视端需要它：
+  FR-10.7 要求「最近接收」里选中卡片就能播放。Android 10 起不能把 file:// 的路径
+  直接丢给另一个应用（StrictMode 会抛 FileUriExposedException），必须走 content:// URI。
+  而这份 URI 只对**用户当前这一次点击**所指向的应用临时授权（FLAG_GRANT_READ_URI_PERMISSION），
+  并非对所有应用开放 —— 这正是它安全的地方。
+
+  注意这里授权的是整个外部存储根，因为共享根本身就是内部存储根（FR-6.3）。
+  这是有意的取舍：如果只授权某个子目录，用户在设置里换了共享根就会播放失败，
+  而失败信息对用户完全不可理解。
+-->
+<paths>
+    <!-- 共享根（直连模式）：/storage/emulated/0 -->
+    <external-path
+        name="shared_root"
+        path="." />
+    <!-- 兜底通道：未获得全文件访问时共享根落在应用外部私有目录 -->
+    <external-files-path
+        name="app_external_files"
+        path="." />
+    <files-path
+        name="app_files"
+        path="." />
+    <cache-path
+        name="app_cache"
+        path="." />
+</paths>

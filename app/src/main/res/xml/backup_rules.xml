@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- 只备份设置，不备份配对令牌与日志（安全设计 §7：凭据不离开设备） -->
+    <include domain="sharedpref" path="." />
+    <exclude domain="sharedpref" path="pocketserver_secrets.preferences_pb" />
+</full-backup-content>

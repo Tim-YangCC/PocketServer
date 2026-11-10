@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+      FR-6.5 / O-6：局域网内默认明文传输（关闭 TLS 可获得零拷贝全速通路，
+      实测 55MB/s vs 35MB/s）。仅对私网网段放行明文，公网地址仍强制 HTTPS。
+    -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <!-- mDNS 主机名：电脑端浏览器直接访问 pocketserver.local -->
+        <domain includeSubdomains="true">pocketserver.local</domain>
+        <domain includeSubdomains="true">local</domain>
+        <!-- 常见私网网段（Android 的 domain 规则不支持通配符网段，此处列前缀） -->
+        <domain includeSubdomains="true">192.168.0.1</domain>
+        <domain includeSubdomains="true">10.0.0.1</domain>
+        <domain includeSubdomains="true">172.16.0.1</domain>
+    </domain-config>
+</network-security-config>

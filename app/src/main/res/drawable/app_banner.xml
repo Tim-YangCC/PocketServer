@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android TV 启动器横幅（FR-10.1）。规范建议 320x180 dp。
+  矢量无法内嵌文字，正式发版时建议替换为带应用名的 PNG：
+  res/drawable-xhdpi/app_banner.png（320x180px）。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <path
+        android:fillColor="#0E1116"
+        android:pathData="M0,0 h320 v180 h-320 z" />
+    <path
+        android:fillColor="#1B2430"
+        android:pathData="M24,24 h272 v132 h-272 z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M136,46 h48 a10,10 0 0 1 10,10 v66 a10,10 0 0 1 -10,10 h-48 a10,10 0 0 1 -10,-10 v-66 a10,10 0 0 1 10,-10 z" />
+    <path
+        android:fillColor="#1F6FEB"
+        android:pathData="M136,62 h48 v52 h-48 z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M160,104 L160,74 M146,88 L160,74 L174,88" />
+    <path
+        android:fillColor="#5B9BFF"
+        android:pathData="M92,78 h10 v22 h-10 z" />
+    <path
+        android:fillColor="#5B9BFF"
+        android:pathData="M108,70 h10 v30 h-10 z" />
+    <path
+        android:fillColor="#5B9BFF"
+        android:pathData="M202,78 h10 v22 h-10 z" />
+    <path
+        android:fillColor="#5B9BFF"
+        android:pathData="M218,70 h10 v30 h-10 z" />
+</vector>

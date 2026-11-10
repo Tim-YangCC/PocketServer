@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 设备机身 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,22 h32 a8,8 0 0 1 8,8 v48 a8,8 0 0 1 -8,8 h-32 a8,8 0 0 1 -8,-8 v-48 a8,8 0 0 1 8,-8 z" />
+    <!-- 屏幕 -->
+    <path
+        android:fillColor="#1F6FEB"
+        android:pathData="M38,32 h32 v40 h-32 z" />
+    <!-- 屏幕内的上行箭头（表示"上传/共享"） -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M54,64 L54,44 M46,52 L54,44 L62,52" />
+    <!-- 两侧信号条 -->
+    <path
+        android:fillColor="#7FB2FF"
+        android:pathData="M22,48 h6 v14 h-6 z" />
+    <path
+        android:fillColor="#7FB2FF"
+        android:pathData="M80,48 h6 v14 h-6 z" />
+</vector>

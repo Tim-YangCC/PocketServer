@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ps_bg">#FFF4F6F9</color>
+    <color name="ps_surface">#FFFFFFFF</color>
+    <color name="ps_primary">#FF1F6FEB</color>
+    <color name="ps_on_primary">#FFFFFFFF</color>
+    <color name="ps_tv_bg">#FF0E1116</color>
+    <color name="ps_tv_surface">#FF171C24</color>
+    <color name="ps_icon_bg">#FF0B2A5B</color>
+</resources>

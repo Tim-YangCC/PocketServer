@@ -1,0 +1,22 @@
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.keystore
+*.jks
+signing/release-signing-password.txt
+signing/release-signing.properties
+signing/release-secret.tmp
+!debug.keystore
+output/
+
+# Local Kotlin cache and private signing material
+.kotlin/
+signing/

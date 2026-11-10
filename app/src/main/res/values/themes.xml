@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 手机端：浅色、无 ActionBar（全部界面由 Compose 绘制） -->
+    <style name="Theme.PocketServer" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/ps_bg</item>
+        <item name="android:statusBarColor">@color/ps_surface</item>
+        <item name="android:navigationBarColor">@color/ps_surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+    <!-- TV 端：深色质感（FR-10.2 十尺 UI） -->
+    <style name="Theme.PocketServer.Tv" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/ps_tv_bg</item>
+        <item name="android:colorBackground">@color/ps_tv_bg</item>
+        <item name="android:statusBarColor">@color/ps_tv_bg</item>
+        <item name="android:navigationBarColor">@color/ps_tv_bg</item>
+    </style>
+
+    <!-- 扫码页：全屏深色，减少反光干扰取景 -->
+    <style name="Theme.PocketServer.Dark" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/ps_tv_bg</item>
+        <item name="android:statusBarColor">@color/ps_tv_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
